@@ -1,0 +1,78 @@
+.navbar {
+  background-color: rgba(darken($primary, 20%), 0.8);
+
+  a {
+    color: #fff;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+.nav-pills-outline {
+  .nav-link {
+    border-radius: 0;
+  }
+
+  .nav-link.active,
+  .show > .nav-link {
+    background-color: transparent;
+    border: 1px solid $blue;
+  }
+}
+
+.navbar-brand {
+  font-family: 'Proxima Nova Rg', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px;
+
+  .img-logo {
+    max-height: 50px;
+    margin-right: 15px;
+  }
+}
+
+.nav-tabs-line {
+  a {
+    color: $primary;
+  }
+
+  .nav-item {
+    padding: 0;
+  }
+
+  & .nav-link {
+    border-bottom: 10px solid lighten($primary, 50%);
+  }
+
+  & .nav-link.active,
+  & .nav-item.show .nav-link {
+    border-bottom-color: $blue;
+    transition: border-bottom 0.35s linear;
+  }
+
+  .tab-title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 54px;
+  }
+}
+
+.block-hover:hover {
+  color: $blue;
+  cursor: pointer;
+}
+
+.icon-block {
+  &-title h5 {
+    font-size: 1.3rem;
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+}

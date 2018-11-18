@@ -1,0 +1,177 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title S&R Systems
+  body
+    include /header.pug
+    section
+      .container
+        .row.justify-content-around.align-items-center
+          .col-12.col-md-5
+            #carousel_modules.carousel.slide(data-ride='carousel')
+              .carousel-inner
+                .carousel-item.active
+                  img.img-fluid(src='~images/trident.png', alt='trident')
+                  .carousel-caption.d-none.d-md-block.text-center
+                    span Лабораторный модуль SPC Trident
+                .carousel-item
+                  img.img-fluid(src='~images/sequoia.png', alt='sequoia')
+                  .carousel-caption.d-none.d-md-block.text-center
+                    span Пилотная установка SEQUOIA
+              a.carousel-control-prev(href='#carousel_modules', role='button', data-slide='prev')
+                i.icon-scroll-arrow-to-left-1
+                span.sr-only Previous
+              a.carousel-control-next(href='#carousel_modules', role='button', data-slide='next')
+                i.icon-scroll-arrow-to-right-1
+                span.sr-only Next  
+          .col-12.col-md-6.text-justify
+            h5.mb-5 Первапорационные мембранные модули
+            p.
+              Модульные системы на основе плоскокамерных ячеек SPC Trident для исследования процессов первапорации. Уникальная конструкция позволяет исследовать свойства мембранных материалов в условиях стационарных и нестационарных процессов разделения, а также производить пробоподготовку и получение обезвоженных растворителей с помощью первапорации в лабораторных условиях.
+        .row.justify-content-around
+          .col-5.box-shadow.bg-grey.mb-4#trident
+            .row.align-items-center.h-100
+              .col-4.p-0
+                img.img-fluid(src="~images/trident.png", alt="trident")
+              .col.card-inner
+                h6.title Модуль SPC Trident
+                p.card-text.
+                  Submersible Pervaporation chamber (погружной первапорационный модуль) Trident
+                  Cпроектирован для исследования и масштабирования процессов первапорационного разделения.
+
+                .d-flex.justify-content-between.align-items-center
+                  button.btn.btn-sm.btn-light(type='button' data-toggle="modal" data-target="#trident_inf") Подробнее
+          .col-5.box-shadow.bg-grey.mb-4
+            .row.align-items-center.h-100
+              .col-4.p-0
+                img.img-fluid(src="~images/sequoia.png", alt="sequoia")
+              .col.card-inner
+                h6.title Пилотная установка SEQUOIA
+                p.card-text.
+                  Пилотная установка на основе модулей SPC Trident для лабораторного обезвоживания растворителей SEQUOIA.
+                  Предназначена для получения обезвоженных растворителей в условиях лабораторий и масштабирования процессов первапорации.
+                d-flex.justify-content-between.align-items-center
+                  button.btn.btn-sm.btn-light(type='button' data-toggle="modal" data-target="#sequoia_inf") Подробнее
+          
+
+
+#trident_inf.modal.fade(tabindex='-1', role='dialog', aria-labelledby='trident_inf', aria-hidden='true')
+  .modal-dialog.modal-dialog-centered.modal-lg(role='document')
+    .modal-content
+      .modal-header
+        h5#trident-label.modal-title Модуль SPC Trident
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+      .modal-body
+        .row
+          .col-md-5.p-0
+            img.img-fluid(src='~images/trident.png', alt='trident')
+          .col-md-7
+            p Конструкция модуля позволяет:
+            ul
+              li  наиболее точно измерять значения проницаемости выскокоэффективных мембранных материалов; 
+              li  возможность проведения процесса в погружном режиме позволяет проводить его при неизменном составе питающей смеси даже при высоких значениях производительности исследуемых мембран;
+              li  переоборудовать SPC Trident в модуль проточного типа;
+              li  использовать различные методы отвода пермеата (вакуумирование, сдув, комбинированный отвод);
+              li  подключить SPC Trident к системе хроматографического определения состава пермеата в режиме реального времени.
+          
+          .col-7
+            p.
+              Особенности модуля:
+            ul
+              li модуль имеет систему комбинированного отвода пермеата; 
+              li встроенный эжекторный картридж позволяет создавать разрежение в камере пермеата с помощью тока инертного газа, что значительно упрощает процесс проведения первапорационных исследований;
+              li отсутствие необходимости в дорогостоящих вакуумных системах при сохранении высоких значений движущей силы процесса делает SPC Trident революционным инструментом для исследования первапорационных свойств материалов.
+          .col-md-5.p-0
+            img.img-fluid(src='~images/trident-cut.png', alt='trident-cut')
+          .col-12
+            p
+              | Модули SPC Trident могут быть поставлены с установленными мембранными материалами 
+              a(href='material#material_romakon') Romakon 
+              |и 
+              a(href='membrans/material' data-toggle="modal" data-target="#material_romakon-al2") Romakon Al2
+              
+          .col-12
+            table.table.table-striped
+              thead
+                tr
+                  th Характеристики
+                  th Значение
+              tbody
+                tr
+                  td Эффективная площадь мембранного полотна
+                  td 16 cм
+                    sup 2
+                tr
+                  td Материал корпуса
+                  td AISI 316 (08х17н13м2) / Фторопласт Ф4
+                tr
+                  td Материал уплотнений
+                  td фторкаучук 
+                tr
+                  td Подключение к вакуумной системе
+                  td шланг PVDF 4x1 мм
+                tr
+                  td Максимальное значение абсолютного давления внутри камеры пермеата при погружении
+                  td 5 мбар
+
+      .modal-footer
+        a.btn.btn-sm.btn-light(href="/contacts") Получить коммерческое предложение
+
+#sequoia_inf.modal.fade(tabindex='-1', role='dialog', aria-labelledby='sequoia_inf', aria-hidden='true')
+  .modal-dialog.modal-dialog-centered.modal-lg(role='document')
+    .modal-content
+      .modal-header
+        h5#sequoia-label.modal-title Пилотная установка SEQUOIA
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+      .modal-body
+        .row.justify-content-center
+          .col-6
+            #carousel_sequoia.carousel.slide(data-ride='carousel')
+              .carousel-inner
+                .carousel-item.active
+                  img.img-fluid(src='~images/sequoia.png', alt='sequoia')
+                .carousel-item
+                  img.img-fluid(src='~images/sequoia-cut.png', alt='sequoia-cut')
+              a.carousel-control-prev(href='#carousel_sequoia', role='button', data-slide='prev')
+                i.icon-scroll-arrow-to-left-1
+                span.sr-only Previous
+              a.carousel-control-next(href='#carousel_sequoia', role='button', data-slide='next')
+                i.icon-scroll-arrow-to-right-1
+                span.sr-only Next
+          .col-6.justify-content-center
+            p. 
+              Конструкция SEQUOIA позволяет варьировать режимы потоков питающей смеси и пермеата (противоток /прямоток)
+            p. 
+              Разработано при поддержке фонда содействия малых форм предприятий в научно-технической сфере.
+            img(class="d-flex m-auto" src="~images/fasie.svg", alt="fasie logo")
+            a.btn.btn-sm.btn-light.mt-5(href="/contacts") Получить коммерческое предложение
+          .col-12
+            table.table.table-striped
+              thead
+                tr
+                  th Характеристики
+                  th Значение
+              tbody
+                tr
+                  td Эффективная площадь мембранного полотна
+                  td 16 cм
+                    sup 2
+                tr
+                  td Материал корпуса
+                  td AISI 316 (08х17н13м2) / Фторопласт Ф4
+                tr
+                  td Материал уплотнений
+                  td фторкаучук 
+                tr
+                  td Подключение к вакуумной системе
+                  td шланг PVDF 4x1 мм
+                tr
+                  td Максимальное значение абсолютного давления внутри камеры пермеата при погружении
+                  td 5 мбар
+                tr
+                  td(colspan="2") Комбинированный отвод пермеата

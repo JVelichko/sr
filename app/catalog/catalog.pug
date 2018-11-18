@@ -1,0 +1,130 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title S&R Systems
+  body
+    include /header.pug
+    section
+      .container
+        .row.justify-content-around.align-items-center
+          .col-12.col-md-5
+            #carouselExampleControls.carousel.slide(data-ride='carousel')
+              .carousel-inner
+                .carousel-item.active
+                  img.img-fluid(src='~images/svr-200.png', alt='svr-200')
+                  .carousel-caption.d-none.d-md-block.text-center
+                    span Реактор SVR-200
+                .carousel-item
+                  img.img-fluid(src='~images/svr-100a.png', alt='svr-100a')
+                  .carousel-caption.d-none.d-md-block.text-center
+                    span Реактор SVR-100A
+                .carousel-item
+                  img.img-fluid(src='~images/svr-250a.png', alt='svr-250a')
+                  .carousel-caption.d-none.d-md-block.text-center
+                    span Реактор SVR-250A
+                .carousel-item
+                  img.img-fluid(src='~images/svr-1.png', alt='svr-1')
+                  .carousel-caption.d-none.d-md-block.text-center
+                    span Реактор SVR-1
+                .carousel-item
+                  img.img-fluid(src='~images/svr-8.png', alt='svr-8')
+                  .carousel-caption.d-none.d-md-block.text-center
+                    span Реактор SVR-8
+                .carousel-item
+                  img.img-fluid(src='~images/svr-25.png', alt='svr-25')
+                  .carousel-caption.d-none.d-md-block.text-center
+                    span Реактор SVR-25
+                .carousel-item
+                  img.img-fluid(src='~images/svr-nf.png', alt='svr-nf')
+                  .carousel-caption.d-none.d-md-block.text-center
+                    span Фильтр SVR-NF
+                .carousel-item
+                  img.img-fluid(src='~images/svr-pf65a.png', alt='svr-PF65A')
+                  .carousel-caption.d-none.d-md-block.text-center
+                    span Фильтр SVR-PF65A
+              a.carousel-control-prev(href='#carouselExampleControls', role='button', data-slide='prev')
+                i.icon-scroll-arrow-to-left-1
+                span.sr-only Previous
+              a.carousel-control-next(href='#carouselExampleControls', role='button', data-slide='next')
+                i.icon-scroll-arrow-to-right-1
+                span.sr-only Next
+
+            //img(class='img-fluid' src='~images/svr-200.png')  
+          .col-12.col-md-6.text-justify
+            h5.mb-5 Ёмкостное оборудование
+            p.
+              Реакторы и фильтры изготавливаемые в S&R Systems это надежное оборудование для современных  лабораторий,фармацевтических и химических производств.
+            p.
+              Реакторные сосуды и оборудование для фильтрования с рубашкой или змеевиком, теплоизоляцией или двумя стенками, изготовленные из нержавеющей стали или фторопласта, доступны как с нижним спускным клапаном без мертвого объема, так и без него.  При разработке оборудования S&R Systems обращает особое внимание на функциональность, безопасность и долгосрочную работу без перебоев.
+        .row.justify-content-center
+          .col-10
+            .row.justify-content-between
+              p.
+                S&R Systems осуществляет разработку и производство емкостного оборудования для различных задач химических производств:
+              .col-6
+                ul
+                  li фильтрация под давлением/вакуумом;
+                  li осуществление химических превращений;
+                  li работа с высокоагрессивными средами.
+                p Все оборудование изготавливается в соответствии с требованиями:
+                ul  
+                  li ТРТС О безопасности сосудов под давлением;
+                  li Good Manufacturing Practice (GMP).
+              .col-3.align-self-center
+                img.img-fluid(src="~images/gmp.png", alt="gmp")
+            p Для фармацевтических производств предоставляются: 
+            ul
+              li протоколы FAT (Factory Acceptance Test) и SAT (On-Site Acceptance Test);
+              li валидационные протоколы IQ/OQ;
+              li сертификаты на материалы и дополнительное оборудование.
+
+
+    section.sub-section.series-card
+      .container
+        h5.text-center.title.mb-4 каталог
+        .row.series-card
+          .card-deck.justify-content-center
+            .card.col-4.mb-4.box-shadow.series
+              img.img-fluid-90(src='~images/svr-8.png')
+              .card-body
+                h6.title Лабораторные реакторы
+                p.card-text.
+                  Оборудование для изучения и масштабирования химических процессов в условиях лаборатории.
+                a(class='d-flex align-items-center' href='catalog/labscale') 
+                  span.mr-1 Посмотреть продукцию 
+                  i.icon-scroll-arrow-to-right-1
+            
+            .card.col-4.mb-4.box-shadow.series
+              img.img-fluid-90(src='~images/svr-250a.png')
+              .card-body
+                h6.title Стальные реакторы
+                p.card-text.
+                  Реакционные сосуды из нержавеющей стали марок 08х17н13м2 (AISI 316); 08х17н13м2T (AISI 316 Ti); 08Х18Н10 (AISI 304) и других сплавов.
+                a(class='d-flex align-items-center' href='catalog/industrial') 
+                  span.mr-1 Посмотреть продукцию 
+                  i.icon-scroll-arrow-to-right-1
+            .w-100.d-none.d-md-block
+            .card.col-4.mb-4.box-shadow.series
+              img.img-fluid-90(src='~images/svr-200.png')
+              .card-body
+                h6.title Модульные реакторы
+                p.card-text.
+                  Модульные реакционные сосуды из фторопласта для работы с особо агрессивными средами.
+                p.card-text.
+                  Уникальная модульная конструкция обеспечивает мобильность, повышенную функциональность и привлекательную стоимость оборудования.
+                a(class='d-flex align-items-center' href='catalog/modular') 
+                  span.mr-1 Посмотреть продукцию 
+                  i.icon-scroll-arrow-to-right-1
+            .card.col-4.mb-4.box-shadow.series
+              img.img-fluid-90(src='~images/svr-nf.png')
+              .card-body
+                h6.title Фильтры
+                p.card-text.
+                  НУТЧ и ДРУК фильтры с удобной и простой конструкцией из фторопласта Ф-4 и нержавеющей стали.
+                a(class='d-flex align-items-center' href='catalog/filters') 
+                  span.mr-1 Посмотреть продукцию 
+                  i.icon-scroll-arrow-to-right-1
+          

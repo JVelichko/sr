@@ -1,0 +1,121 @@
+@mixin bg-opacity($color, $opacity) {
+  background: $color;
+  background: rgba($color, $opacity);
+}
+
+.series-card {
+  .series {
+    background-color: $grey;
+
+    .title {
+      font-family: 'Proxima Nova Rg', sans-serif;
+      font-weight: 600;
+      text-transform: lowercase;
+      margin-bottom: 10px;
+    }
+
+    .card-text {
+      font-size: 14px;
+    }
+  }
+}
+
+.img-fluid-90 {
+  max-width: 90%;
+  height: auto;
+}
+
+.card {
+  border: 0 solid transparent;
+  border-radius: 0;
+
+  & img {
+    margin: auto;
+  }
+}
+
+.carousel-caption {
+  @include bg-opacity($grey, 0.5);
+
+  color: $primary;
+}
+
+.card-horisontal {
+  .card {
+    flex-direction: row;
+  }
+}
+
+.card-inner {
+  padding: 15px;
+  flex-direction: row;
+  font-size: 14px;
+
+  .title {
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+
+.modal {
+  font-size: 14px;
+
+  ul {
+    padding-inline-start: 20px;
+  }
+
+  .modal-content {
+    border: 0 solid rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    outline: 0;
+  }
+
+  .modal-header {
+    border-bottom: 0;
+  }
+
+  .modal-footer {
+    border-top: 0;
+    justify-content: center;
+  }
+}
+
+.modal-title {
+  font-family: 'Proxima Nova Rg', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.article {
+  .panel-heading {
+    cursor: pointer;
+    padding: 10px 30px;
+    background-color: $grey;
+
+    i {
+      display: inline-block;
+      transform: rotate(90deg);
+      vertical-align: middle;
+      padding-bottom: 15px;
+      font-size: 0.7em;
+    }
+
+    a {
+      color: $primary;
+      text-decoration: none;
+      background-color: transparent;
+      -webkit-text-decoration-skip: objects;
+
+      &:hover,
+      &:focus {
+        color: $blue;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .panel-body {
+    padding: 40px;
+  }
+}

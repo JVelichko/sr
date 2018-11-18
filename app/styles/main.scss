@@ -1,0 +1,12 @@
+$blue: #03abf4;
+$orange: #e54304;
+$primary: #494d55;
+$grey :#f5f5f5;
+
+@import 'fonts';
+@import 'icon';
+@import '~bootstrap/scss/bootstrap';
+@import '/modules/manifest';
+@import '/states/manifest';
+@import '/layouts/manifest';
+@import '/base/manifest';

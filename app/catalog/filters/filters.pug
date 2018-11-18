@@ -1,0 +1,166 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title S&R Systems
+  body
+    include /header.pug
+    section
+      .container
+        .row.justify-content-around.align-items-center
+          .col-12.col-md-5
+            #carousel_filters.carousel.slide(data-ride='carousel')
+              .carousel-inner
+                .carousel-item.active
+                  img.img-fluid(src='~images/svr-nf.png', alt='svr-nf')
+                  .carousel-caption.d-none.d-md-block.text-center
+                    span Фильтр SVR-NF
+                .carousel-item
+                  img.img-fluid(src='~images/svr-pf65a.png', alt='svr-pf65a')
+                  .carousel-caption.d-none.d-md-block.text-center
+                    span Фильтр SVR-PF65A
+              a.carousel-control-prev(href='#carousel_filters', role='button', data-slide='prev')
+                i.icon-scroll-arrow-to-left-1
+                span.sr-only Previous
+              a.carousel-control-next(href='#carousel_filters', role='button', data-slide='next')
+                i.icon-scroll-arrow-to-right-1
+                span.sr-only Next  
+          .col-12.col-md-6.text-justify
+            h5.mb-5 Фильтры
+            p.
+              НУТЧ и ДРУК фильтры с удобной и простой конструкцией из нержавеющей стали и фторопласта Ф-4 для осуществления фильтрации суспензий и высокоагрессивных сред при давлениях до 0,6 МПа.
+        .row.justify-content-around
+          .col-5.box-shadow.bg-grey.mb-4
+            .row.align-items-center.h-100
+              .col-4.p-0
+                img.img-fluid(src="~images/svr-nf.png", alt="svr-nf")
+              .col.card-inner
+                h6.title Фильтр SVR-NF
+                p.card-text.
+                  Модульный фторопластовый НУТЧ фильтр большого обьема (обьем камеры-приемника до 100 л ) с уникальной конструкцией теплообменой системы позволяет работать со сверхагрессивными средами.
+                .d-flex.justify-content-between.align-items-center
+                  button.btn.btn-sm.btn-light(type='button' data-toggle="modal" data-target="#svr_nf") Подробнее
+          .col-5.box-shadow.bg-grey.mb-4
+            .row.align-items-center.h-100
+              .col-4.p-0
+                img.img-fluid(src="~images/svr-pf65a.png", alt="svr-pf65a")
+              .col.card-inner
+                h6.title Фильтр SVR-PF65A
+                p.card-text.
+                  ДРУК фильтр малого обьема из нержавеющей стали с рубашкой и теплоизоляцией для фильтрации при давлениях до 0,6 МПа с мобильной тележкой.
+                d-flex.justify-content-between.align-items-center
+                  button.btn.btn-sm.btn-light(type='button' data-toggle="modal" data-target="#svr_pf65a") Подробнее
+          
+
+
+#svr_nf.modal.fade(tabindex='-1', role='dialog', aria-labelledby='svr_nf', aria-hidden='true')
+  .modal-dialog.modal-dialog-centered.modal-lg(role='document')
+    .modal-content
+      .modal-header
+        h5#svr_nf-label.modal-title Фильтр SVR-NF
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+      .modal-body
+        .row.justify-content-center
+          .col-6
+            #carousel_svr_nf.carousel.slide(data-ride='carousel')
+              .carousel-inner
+                .carousel-item.active
+                  img.img-fluid(src='~images/svr-nf.png', alt='svr-nf')
+                .carousel-item
+                  img.img-fluid(src='~images/svr-nf-cut.png', alt='svr-nf-cut')
+              a.carousel-control-prev(href='#carousel_svr_nf', role='button', data-slide='prev')
+                i.icon-scroll-arrow-to-left-1
+                span.sr-only Previous
+              a.carousel-control-next(href='#carousel_svr_nf', role='button', data-slide='next')
+                i.icon-scroll-arrow-to-right-1
+                span.sr-only Next
+          .col-12
+            table.table.table-striped
+              thead
+                tr
+                  th Характеристики
+                  th Значение
+              tbody
+                tr
+                  td Загрузочный объем
+                  td 100 - 200 л
+                tr
+                  td Тип уплотнения вала
+                  td двойное торцевое уплотнение типа Тандем
+                tr
+                  td Диапазон рабочих температур
+                  td от -20 до +220 °C
+                tr
+                  td Максимальное рабочее давление
+                  td 0.01 / 0.4 МПа
+                tr
+                  td Материал корпуса
+                  td Фторопласт Ф4 (PTFE)
+                tr
+                  td Материал армирующих частей
+                  td Сталь AISI 316 L
+                tr
+                  td Площадь фильтрования
+                  td 
+                    |0,1-0,2 м
+                    sup 2
+                tr
+                  td(colspan="2")  Вмонтированный в корпус теплообменник
+                tr
+                  td(colspan="2")  Возможность изменять объем реактора в условиях производства
+
+      .modal-footer
+        a.btn.btn-sm.btn-light(href="/contacts") Получить коммерческое предложение
+
+#svr_pf65a.modal.fade(tabindex='-1', role='dialog', aria-labelledby='svr_pf65a', aria-hidden='true')
+  .modal-dialog.modal-dialog-centered.modal-lg(role='document')
+    .modal-content
+      .modal-header
+        h5#svr_pf65a-label.modal-title Фильтр SVR-PF65A
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+      .modal-body
+        .row.justify-content-center
+          .col-6
+            #carousel_svr_pf.carousel.slide(data-ride='carousel')
+              .carousel-inner
+                .carousel-item.active
+                  img.img-fluid(src='~images/svr-pf65a.png', alt='svr-pf65a')
+                .carousel-item
+                  img.img-fluid(src='~images/svr-pf65a-cut.png', alt='svr-pf65a-cut')
+              a.carousel-control-prev(href='#carousel_svr_pf', role='button', data-slide='prev')
+                i.icon-scroll-arrow-to-left-1
+                span.sr-only Previous
+              a.carousel-control-next(href='#carousel_svr_pf', role='button', data-slide='next')
+                i.icon-scroll-arrow-to-right-1
+                span.sr-only Next
+          .col-12
+            table.table.table-striped
+              thead
+                tr
+                  th Характеристики
+                  th Значение
+              tbody
+                tr
+                  td Объем верхней камеры
+                  td 63,5 л
+                tr
+                  td Диапазон рабочих температур
+                  td от -20 до +120 °C
+                tr
+                  td Материал корпуса
+                  td AISI 316 Ti
+                tr
+                  td Материал рубашки и кожуха теплоизоляции
+                  td AISI 304
+                tr
+                  td Площадь фильтрования
+                  td 
+                    |0,08 м
+                    sup 2
+
+      .modal-footer
+        a.btn.btn-sm.btn-light(href="/contacts") Получить коммерческое предложение

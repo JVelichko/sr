@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/open-sans-regular.woff2") format("woff2");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('http://fonts.googleapis.com/css?family=Ubuntu'); 
+
+/* FREE GOOGLE FONT */
+//@import url('http://fonts.googleapis.com/css?family=ProximaNova'); /* FREE GOOGLE FONT */
+
+@import url(https://fonts.googleapis.com/css?family=Cormorant+SC|Roboto+Slab);
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville);
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Proxima Nova Lt';
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/ProximaNova-Light.eot");
+  src: local("Proxima Nova Light"), local("ProximaNova-Light"), url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Proxima Nova Th';
+  font-weight: 100;
+  font-style: normal;
+  src: url("../fonts/ProximaNova-Thin.eot");
+  src: local("Proxima Nova Thin"), local("ProximaNova-Thin"), url("../fonts/ProximaNova-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Thin.woff") format("woff"), url("../fonts/ProximaNova-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bd';
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: local("Proxima Nova Bold"), local("ProximaNova-Bold"), url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bl';
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/ProximaNova-Black.eot");
+  src: local("Proxima Nova Black"), local("ProximaNova-Black"), url("../fonts/ProximaNova-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Black.woff") format("woff"), url("../fonts/ProximaNova-Black.ttf") format("truetype");
+}

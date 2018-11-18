@@ -1,0 +1,984 @@
+/* @font-face {
+  font-family: 'icomoon';
+  src: url("~/fonts/icomoon.eot?9f1wk1");
+  src: url("~/fonts/icomoon.eot?9f1wk1#iefix") format("embedded-opentype"), url("~/fonts/icomoon.ttf?9f1wk1") format("truetype"), url("~/fonts/icomoon.woff?9f1wk1") format("woff"), url("~/fonts/icomoon.svg?9f1wk1#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+} */
+@font-face {
+  font-family: 'icomoon';
+  src: url('~fonts/icomoon.eot');
+  src: url('~fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('~fonts/icomoon.woff') format('woff'),
+    url('~fonts/icomoon.ttf') format('truetype'),
+    url('~fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-download::before {
+  content: "\e9ed";
+}
+
+.icon-instagram-logo::before {
+  content: "\e9ec";
+}
+
+.icon-vk::before {
+  content: "\e9e7";
+}
+
+.icon-youtube-play-button::before {
+  content: "\e9e8";
+}
+
+.icon-youtube-logo::before {
+  content: "\e9e9";
+}
+
+.icon-twitter-logo2::before {
+  content: "\e9ea";
+}
+
+.icon-facebook-letter-logo::before {
+  content: "\e9eb";
+}
+
+.icon-menu::before {
+  content: "\e900";
+}
+
+.icon-add-contacts::before {
+  content: "\e901";
+}
+
+.icon-addition-button::before {
+  content: "\e902";
+}
+
+.icon-addition-symbol::before {
+  content: "\e903";
+}
+
+.icon-add-list::before {
+  content: "\e904";
+}
+
+.icon-arroba::before {
+  content: "\e905";
+}
+
+.icon-arrow-down-and-right::before {
+  content: "\e906";
+}
+
+.icon-arrow-pointing-up::before {
+  content: "\e907";
+}
+
+.icon-battery-level::before {
+  content: "\e908";
+}
+
+.icon-battery-level-1::before {
+  content: "\e909";
+}
+
+.icon-battery-level-2::before {
+  content: "\e90a";
+}
+
+.icon-battery-level-3::before {
+  content: "\e90b";
+}
+
+.icon-big-cloud::before {
+  content: "\e90c";
+}
+
+.icon-big-elephant::before {
+  content: "\e90d";
+}
+
+.icon-big-tablet::before {
+  content: "\e90e";
+}
+
+.icon-bigt-down-arrow::before {
+  content: "\e90f";
+}
+
+.icon-black-screen::before {
+  content: "\e910";
+}
+
+.icon-black-square::before {
+  content: "\e911";
+}
+
+.icon-black-star::before {
+  content: "\e912";
+}
+
+.icon-blank-document::before {
+  content: "\e913";
+}
+
+.icon-book::before {
+  content: "\e914";
+}
+
+.icon-brightness-setting::before {
+  content: "\e915";
+}
+
+.icon-bucket::before {
+  content: "\e916";
+}
+
+.icon-bulleted-list::before {
+  content: "\e917";
+}
+
+.icon-calendar::before {
+  content: "\e918";
+}
+
+.icon-cancel-button::before {
+  content: "\e919";
+}
+
+.icon-cd-rom::before {
+  content: "\e91a";
+}
+
+.icon-charging-battery::before {
+  content: "\e91b";
+}
+
+.icon-check-mark::before {
+  content: "\e91c";
+}
+
+.icon-circumference::before {
+  content: "\e91d";
+}
+
+.icon-clipboard::before {
+  content: "\e91e";
+}
+
+.icon-cloud-with-lightning::before {
+  content: "\e91f";
+}
+
+.icon-cogwheel::before {
+  content: "\e920";
+}
+
+.icon-color-palette::before {
+  content: "\e921";
+}
+
+.icon-compass::before {
+  content: "\e922";
+}
+
+.icon-concert-ticket::before {
+  content: "\e923";
+}
+
+.icon-conversation::before {
+  content: "\e924";
+}
+
+.icon-copyright-infringement::before {
+  content: "\e925";
+}
+
+.icon-counterclockwise::before {
+  content: "\e926";
+}
+
+.icon-coverage-level::before {
+  content: "\e927";
+}
+
+.icon-creative-commons-logo::before {
+  content: "\e928";
+}
+
+.icon-credit-card::before {
+  content: "\e929";
+}
+
+.icon-crossed-arrows::before {
+  content: "\e92a";
+}
+
+.icon-crosshair::before {
+  content: "\e92b";
+}
+
+.icon-daniel-bruce-logo::before {
+  content: "\e92c";
+}
+
+.icon-dark-eye::before {
+  content: "\e92d";
+}
+
+.icon-delete-tool::before {
+  content: "\e92e";
+}
+
+.icon-directional-sign::before {
+  content: "\e92f";
+}
+
+.icon-down-arrow::before {
+  content: "\e930";
+}
+
+.icon-down-arrow-1::before {
+  content: "\e931";
+}
+
+.icon-down-arrow-2::before {
+  content: "\e932";
+}
+
+.icon-dribbble-logo::before {
+  content: "\e933";
+}
+
+.icon-dribble-logo::before {
+  content: "\e934";
+}
+
+.icon-droplet-of-water::before {
+  content: "\e935";
+}
+
+.icon-drops-of-water::before {
+  content: "\e936";
+}
+
+.icon-electric-connector::before {
+  content: "\e937";
+}
+
+.icon-electric-shock::before {
+  content: "\e938";
+}
+
+.icon-empty-star::before {
+  content: "\e939";
+}
+
+.icon-equality-sign::before {
+  content: "\e93a";
+}
+
+.icon-extract-image::before {
+  content: "\e93b";
+}
+
+.icon-facebook-logo::before {
+  content: "\e93c";
+}
+
+.icon-facebook-logo-1::before {
+  content: "\e93d";
+}
+
+.icon-fast-forward-button::before {
+  content: "\e93e";
+}
+
+.icon-fast-rewind-button::before {
+  content: "\e93f";
+}
+
+.icon-file-folder::before {
+  content: "\e940";
+}
+
+.icon-flattr::before {
+  content: "\e941";
+}
+
+.icon-floppy-disk::before {
+  content: "\e942";
+}
+
+.icon-folding-brochure::before {
+  content: "\e943";
+}
+
+.icon-forbidden-sign::before {
+  content: "\e944";
+}
+
+.icon-four-squares::before {
+  content: "\e945";
+}
+
+.icon-github-logo::before {
+  content: "\e946";
+}
+
+.icon-github-logo-1::before {
+  content: "\e947";
+}
+
+.icon-google-plus::before {
+  content: "\e948";
+}
+
+.icon-google-plus-logo::before {
+  content: "\e949";
+}
+
+.icon-graduation-cap::before {
+  content: "\e94a";
+}
+
+.icon-grating::before {
+  content: "\e94b";
+}
+
+.icon-handset::before {
+  content: "\e94c";
+}
+
+.icon-heart::before {
+  content: "\e94d";
+}
+
+.icon-heart-1::before {
+  content: "\e94e";
+}
+
+.icon-high-voltage::before {
+  content: "\e94f";
+}
+
+.icon-honour::before {
+  content: "\e950";
+}
+
+.icon-hourglass::before {
+  content: "\e951";
+}
+
+.icon-identity-card::before {
+  content: "\e952";
+}
+
+.icon-inbox::before {
+  content: "\e953";
+}
+
+.icon-infinity-sign::before {
+  content: "\e954";
+}
+
+.icon-information-button::before {
+  content: "\e955";
+}
+
+.icon-info-sign::before {
+  content: "\e956";
+}
+
+.icon-interlocking-rings::before {
+  content: "\e957";
+}
+
+.icon-large-arrow-up::before {
+  content: "\e958";
+}
+
+.icon-last-fm-logo::before {
+  content: "\e959";
+}
+
+.icon-last-fm-logo-1::before {
+  content: "\e95a";
+}
+
+.icon-left-arrow::before {
+  content: "\e95b";
+}
+
+.icon-left-arrow-1::before {
+  content: "\e95c";
+}
+
+.icon-left-arrow-2::before {
+  content: "\e95d";
+}
+
+.icon-left-arrow-3::before {
+  content: "\e95e";
+}
+
+.icon-left-triangle::before {
+  content: "\e95f";
+}
+
+.icon-letter-x::before {
+  content: "\e960";
+}
+
+.icon-life-preserver::before {
+  content: "\e961";
+}
+
+.icon-link::before {
+  content: "\e962";
+}
+
+.icon-location-pointer::before {
+  content: "\e963";
+}
+
+.icon-locked-padlock::before {
+  content: "\e964";
+}
+
+.icon-logo-linkedin::before {
+  content: "\e965";
+}
+
+.icon-loop-arrow::before {
+  content: "\e966";
+}
+
+.icon-magnet::before {
+  content: "\e967";
+}
+
+.icon-mailbox-key::before {
+  content: "\e968";
+}
+
+.icon-man::before {
+  content: "\e969";
+}
+
+.icon-mans-silhouette::before {
+  content: "\e96a";
+}
+
+.icon-many-awards::before {
+  content: "\e96b";
+}
+
+.icon-map-marker::before {
+  content: "\e96c";
+}
+
+.icon-megaphone::before {
+  content: "\e96d";
+}
+
+.icon-mercury-thermometer::before {
+  content: "\e96e";
+}
+
+.icon-mobile-phone::before {
+  content: "\e96f";
+}
+
+.icon-musical-note::before {
+  content: "\e970";
+}
+
+.icon-musical-note-1::before {
+  content: "\e971";
+}
+
+.icon-music-key::before {
+  content: "\e972";
+}
+
+.icon-mute-sound::before {
+  content: "\e973";
+}
+
+.icon-navigation-arrow::before {
+  content: "\e974";
+}
+
+.icon-network-connection::before {
+  content: "\e975";
+}
+
+.icon-new-message::before {
+  content: "\e976";
+}
+
+.icon-next-track::before {
+  content: "\e977";
+}
+
+.icon-no-dollars-accepted::before {
+  content: "\e978";
+}
+
+.icon-notification-bell::before {
+  content: "\e979";
+}
+
+.icon-office-briefcase::before {
+  content: "\e97a";
+}
+
+.icon-open-book::before {
+  content: "\e97b";
+}
+
+.icon-open-cardboard-box::before {
+  content: "\e97c";
+}
+
+.icon-opposing-arrows::before {
+  content: "\e97d";
+}
+
+.icon-outbox::before {
+  content: "\e97e";
+}
+
+.icon-paint-brush::before {
+  content: "\e97f";
+}
+
+.icon-paper-clip::before {
+  content: "\e980";
+}
+
+.icon-paper-plane::before {
+  content: "\e981";
+}
+
+.icon-pause-button::before {
+  content: "\e982";
+}
+
+.icon-paypal-logo::before {
+  content: "\e983";
+}
+
+.icon-pencil::before {
+  content: "\e984";
+}
+
+.icon-phone-call::before {
+  content: "\e985";
+}
+
+.icon-photo-camera::before {
+  content: "\e986";
+}
+
+.icon-picasa-logo::before {
+  content: "\e987";
+}
+
+.icon-pictures::before {
+  content: "\e988";
+}
+
+.icon-pie-chart::before {
+  content: "\e989";
+}
+
+.icon-pinterest-logo::before {
+  content: "\e98a";
+}
+
+.icon-pinterest-logo-1::before {
+  content: "\e98b";
+}
+
+.icon-planet-earth::before {
+  content: "\e98c";
+}
+
+.icon-play-button::before {
+  content: "\e98d";
+}
+
+.icon-play-button-on-film-strip::before {
+  content: "\e98e";
+}
+
+.icon-play-button-sing::before {
+  content: "\e98f";
+}
+
+.icon-plus-sign::before {
+  content: "\e990";
+}
+
+.icon-price-tag::before {
+  content: "\e991";
+}
+
+.icon-printer::before {
+  content: "\e992";
+}
+
+.icon-question-mark::before {
+  content: "\e993";
+}
+
+.icon-question-mark-1::before {
+  content: "\e994";
+}
+
+.icon-radio-microphone::before {
+  content: "\e995";
+}
+
+.icon-rdio-logo::before {
+  content: "\e996";
+}
+
+.icon-rdio-logo-1::before {
+  content: "\e997";
+}
+
+.icon-record-button::before {
+  content: "\e998";
+}
+
+.icon-relational-graph::before {
+  content: "\e999";
+}
+
+.icon-remainder::before {
+  content: "\e99a";
+}
+
+.icon-resize-arrows::before {
+  content: "\e99b";
+}
+
+.icon-restore-screen::before {
+  content: "\e99c";
+}
+
+.icon-retweet-arrows::before {
+  content: "\e99d";
+}
+
+.icon-right-arrow::before {
+  content: "\e99e";
+}
+
+.icon-right-arrow-1::before {
+  content: "\e99f";
+}
+
+.icon-rising-graph::before {
+  content: "\e9a0";
+}
+
+.icon-rubber::before {
+  content: "\e9a1";
+}
+
+.icon-screen-brightness::before {
+  content: "\e9a2";
+}
+
+.icon-scroll-arrows::before {
+  content: "\e9a3";
+}
+
+.icon-scroll-arrow-to-down::before {
+  content: "\e9a4";
+}
+
+.icon-scroll-arrow-to-left::before {
+  content: "\e9a5";
+}
+
+.icon-scroll-arrow-to-left-1::before {
+  content: "\e9a6";
+}
+
+.icon-scroll-arrow-to-right::before {
+  content: "\e9a7";
+}
+
+.icon-scroll-arrow-to-right-1::before {
+  content: "\e9a8";
+}
+
+.icon-scroll-arrow-to-up::before {
+  content: "\e9a9";
+}
+
+.icon-scroll-vertical-arrows::before {
+  content: "\e9aa";
+}
+
+.icon-sea-waves::before {
+  content: "\e9ab";
+}
+
+.icon-share::before {
+  content: "\e9ac";
+}
+
+.icon-share-alike::before {
+  content: "\e9ad";
+}
+
+.icon-share-connection-sing::before {
+  content: "\e9ae";
+}
+
+.icon-shopping-trolley::before {
+  content: "\e9af";
+}
+
+.icon-sina-weibo::before {
+  content: "\e9b0";
+}
+
+.icon-skype-logo::before {
+  content: "\e9b1";
+}
+
+.icon-small-camera::before {
+  content: "\e9b2";
+}
+
+.icon-small-flag::before {
+  content: "\e9b3";
+}
+
+.icon-small-lantern::before {
+  content: "\e9b4";
+}
+
+.icon-small-leaf::before {
+  content: "\e9b5";
+}
+
+.icon-small-wall-clock::before {
+  content: "\e9b6";
+}
+
+.icon-soundcloud-logo::before {
+  content: "\e9b7";
+}
+
+.icon-speech-bubble::before {
+  content: "\e9b8";
+}
+
+.icon-spotify-logo::before {
+  content: "\e9b9";
+}
+
+.icon-stack-of-coins::before {
+  content: "\e9ba";
+}
+
+.icon-storage-box::before {
+  content: "\e9bb";
+}
+
+.icon-straight-line::before {
+  content: "\e9bc";
+}
+
+.icon-stumbleupon::before {
+  content: "\e9bd";
+}
+
+.icon-stumbleupon-button::before {
+  content: "\e9be";
+}
+
+.icon-suitcase::before {
+  content: "\e9bf";
+}
+
+.icon-sun::before {
+  content: "\e9c0";
+}
+
+.icon-sweden-flag::before {
+  content: "\e9c1";
+}
+
+.icon-switch-arrows::before {
+  content: "\e9c2";
+}
+
+.icon-television::before {
+  content: "\e9c3";
+}
+
+.icon-tencent-qq::before {
+  content: "\e9c4";
+}
+
+.icon-text-and-image-document::before {
+  content: "\e9c5";
+}
+
+.icon-text-document::before {
+  content: "\e9c6";
+}
+
+.icon-thumb-down::before {
+  content: "\e9c7";
+}
+
+.icon-thumb-up::before {
+  content: "\e9c8";
+}
+
+.icon-tick-mark::before {
+  content: "\e9c9";
+}
+
+.icon-traffic-cone::before {
+  content: "\e9ca";
+}
+
+.icon-trash-bin::before {
+  content: "\e9cb";
+}
+
+.icon-trash-can::before {
+  content: "\e9cc";
+}
+
+.icon-tree-leaf::before {
+  content: "\e9cd";
+}
+
+.icon-tree-structure::before {
+  content: "\e9ce";
+}
+
+.icon-triangle-down::before {
+  content: "\e9cf";
+}
+
+.icon-tumblr-logo::before {
+  content: "\e9d0";
+}
+
+.icon-twitter-logo::before {
+  content: "\e9d1";
+}
+
+.icon-two-dots::before {
+  content: "\e9d2";
+}
+
+.icon-two-dots-button::before {
+  content: "\e9d3";
+}
+
+.icon-two-quotes::before {
+  content: "\e9d4";
+}
+
+.icon-undo-arrow::before {
+  content: "\e9d5";
+}
+
+.icon-undo-arrow-1::before {
+  content: "\e9d6";
+}
+
+.icon-unlocked-padlock::before {
+  content: "\e9d7";
+}
+
+.icon-up-and-left-arrow::before {
+  content: "\e9d8";
+}
+
+.icon-up-arrow::before {
+  content: "\e9d9";
+}
+
+.icon-up-scroll-arrow::before {
+  content: "\e9da";
+}
+
+.icon-usb-input::before {
+  content: "\e9db";
+}
+
+.icon-users-group::before {
+  content: "\e9dc";
+}
+
+.icon-vimeo-logo::before {
+  content: "\e9dd";
+}
+
+.icon-vkontakte-logo::before {
+  content: "\e9de";
+}
+
+.icon-volume-level::before {
+  content: "\e9df";
+}
+
+.icon-walkie-talkie::before {
+  content: "\e9e0";
+}
+
+.icon-web-link::before {
+  content: "\e9e1";
+}
+
+.icon-wifi-signal::before {
+  content: "\e9e2";
+}
+
+.icon-wi-fi-signal::before {
+  content: "\e9e3";
+}
+
+.icon-x-button::before {
+  content: "\e9e4";
+}
+
+.icon-yens-are-not-accepted::before {
+  content: "\e9e5";
+}
+
+.icon-zero-button::before {
+  content: "\e9e6";
+}

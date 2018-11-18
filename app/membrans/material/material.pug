@@ -1,0 +1,132 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title S&R Systems
+  body
+    include /header.pug
+    section
+      .container
+        .row.justify-content-around.align-items-center
+          .col-12.col-md-5
+            #carousel_material.carousel.slide(data-ride='carousel')
+              .carousel-inner
+                .carousel-item.active
+                  img.img-fluid(src='~images/romakon.png', alt='romakon')
+                  .carousel-caption.d-none.d-md-block.text-center
+                    span ROMAKON
+                .carousel-item
+                  img.img-fluid(src='~images/romakon-al2.png', alt='romakon-al2')
+                  .carousel-caption.d-none.d-md-block.text-center
+                    span ROMAKON-Al2
+              a.carousel-control-prev(href='#carousel_material', role='button', data-slide='prev')
+                i.icon-scroll-arrow-to-left-1
+                span.sr-only Previous
+              a.carousel-control-next(href='#carousel_material', role='button', data-slide='next')
+                i.icon-scroll-arrow-to-right-1
+                span.sr-only Next  
+          .col-12.col-md-6.text-justify
+            h5.mb-5 Мембранные материалы
+            p.
+              Реакционные сосуды из нержавеющей стали марок 08х17н13м2 (AISI 316); 08х17н13м2T (AISI 316 Ti); 08Х18Н10 (AISI 304) и других сплавов.
+              Снабжаются датчиками и постами управления по требованию заказчика
+              Возможно изготовление во взрывозащищенном исполнении
+        .row.justify-content-around
+          .col-5.box-shadow.bg-grey.mb-4
+            .row.align-items-center.h-100
+              .col-4.p-0#material_romakon
+                img.img-fluid(src="~images/romakon.png", alt="romakon")
+              .col.card-inner
+                h6.title Ассиметричные мембранные материалы ROMAKON
+                p.card-text.
+                  Гидрофильный мембранный материал для ультра-; нанофильтрации и первапорации.
+                .d-flex.justify-content-between.align-items-center
+                  button.btn.btn-sm.btn-light(type='button' data-toggle="modal" data-target="#romakon") Подробнее
+          .col-5.box-shadow.bg-grey.mb-4
+            .row.align-items-center.h-100
+              .col-4.p-0#material_romakon-al2
+                img.img-fluid(src="~images/romakon-al2.png", alt="romakon-al2")
+              .col.card-inner
+                h6.title Ассиметричные мембранные материалы ROMAKON Al2
+                p.card-text.
+                  Гидрофильный мембранный материал для процесса первапорации.
+                d-flex.justify-content-between.align-items-center
+                  button.btn.btn-sm.btn-light(type='button' data-toggle="modal" data-target="#romakon_al2") Подробнее
+          
+
+
+#romakon.modal.fade(tabindex='-1', role='dialog', aria-labelledby='romakon', aria-hidden='true')
+  .modal-dialog.modal-dialog-centered.modal-lg(role='document')
+    .modal-content
+      .modal-header
+        h5#romakon-label.modal-title Ассиметричные мембранные материалы ROMAKON
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+      .modal-body
+        .row
+          .col-6.p-0
+            img.img-fluid(src='~images/romakon.png', alt='romakon')
+          .col-6
+            table.table.table-striped
+              thead
+                tr
+                  th Характеристики
+                  th Значение
+              tbody
+                tr
+                  td Объем чаши сосуда
+                  td 99.75 л
+                tr
+                  td Полный объем сосуда
+                  td 120 л
+                tr
+                  td Рабочее давление в сосуде
+                  td 0.3 МПа
+                tr
+                  td Рабочее давление в рубашке
+                  td 0.4 МПа
+                tr
+                  td Рабочий диапазон температур
+                  td 20-160 °C
+
+      .modal-footer
+        a.btn.btn-sm.btn-light(href="/contacts") Получить коммерческое предложение
+
+#romakon_al2.modal.fade(tabindex='-1', role='dialog', aria-labelledby='romakon_al2', aria-hidden='true')
+  .modal-dialog.modal-dialog-centered.modal-lg(role='document')
+    .modal-content
+      .modal-header
+        h5#romakon_al2-label.modal-title Ассиметричные мембранные материалы ROMAKON
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+      .modal-body
+        .row
+          .col-6.p-0
+            img.img-fluid(src='~images/romakon-al2.png', alt='romakon-al2')
+          .col-6
+            table.table.table-striped
+              thead
+                tr
+                  th Характеристики
+                  th Значение
+              tbody
+                tr
+                  td Объем чаши сосуда
+                  td 99.75 л
+                tr
+                  td Полный объем сосуда
+                  td 120 л
+                tr
+                  td Рабочее давление в сосуде
+                  td 0.3 МПа
+                tr
+                  td Рабочее давление в рубашке
+                  td 0.4 МПа
+                tr
+                  td Рабочий диапазон температур
+                  td 20-160 °C
+
+      .modal-footer
+        a.btn.btn-sm.btn-light(href="/contacts") Получить коммерческое предложение

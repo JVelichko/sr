@@ -1,0 +1,277 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title S&R Systems
+  body
+    include /header.pug
+    section
+      .container
+        .row.justify-content-around.align-items-center
+          .col-12.col-md-5
+             #carousel_industrial.carousel.slide(data-ride='carousel')
+              .carousel-inner
+                .carousel-item.active
+                  img.img-fluid(src='~images/svr-100a.png', alt='svr-100a')
+                  .carousel-caption.d-none.d-md-block.text-center
+                    span Реактор SVR-100A
+                .carousel-item
+                  img.img-fluid(src='~images/svr-250a.png', alt='svr-250a')
+                  .carousel-caption.d-none.d-md-block.text-center
+                    span Реактор SVR-250A
+              a.carousel-control-prev(href='#carousel_industrial', role='button', data-slide='prev')
+                i.icon-scroll-arrow-to-left-1
+                span.sr-only Previous
+              a.carousel-control-next(href='#carousel_industrial', role='button', data-slide='next')
+                i.icon-scroll-arrow-to-right-1
+                span.sr-only Next  
+          .col-12.col-md-6.text-justify
+            h5.mb-5 Реакторы серии SVR-A
+            p.
+              Реакторные сосуды с рубашкой или змеевиком, теплоизоляцией или двумя стенками, изготовленные из нержавеющей стали, доступны как с нижним спускным клапаном без мертвого объема, так и без него. При разработке оборудования S&R Systems обращает особое внимание на функциональность, безопасность и долгосрочную работу без перебоев.
+        .row.justify-content-around
+          .col-5.box-shadow.bg-grey.mb-4
+            .row.align-items-center.h-100
+              .col-4.p-0
+                img.img-fluid(src="~images/svr-100a.png", alt="svr-100a")
+              .col.card-inner
+                h6.title Реактор SVR-100A
+                p.card-text.
+                  Стандартный реакторный сосуд обьемом до 120 литров из нержавеющей стали с рубашкой, рамной мешалкой и двойным торцевым уплотнением вала перемешивающего устройства.
+                .d-flex.justify-content-between.align-items-center
+                  button.btn.btn-sm.btn-light(type='button' data-toggle="modal" data-target="#svr100a") Подробнее
+          .col-5.box-shadow.bg-grey.mb-4
+            .row.align-items-center.h-100
+              .col-4.p-0
+                img.img-fluid(src="~images/svr-250a.png", alt="svr-250a")
+              .col.card-inner
+                h6.title Реактор SVR-250A
+                p.card-text.
+                  SVR250 стандартный реакторный сосуд обьемом до 250 литров из нержавеющей стали с рубашкой, мешалкой с пристеночными скребками и двойным торцевым уплотнением вала перемешивающего устройства.
+                d-flex.justify-content-between.align-items-center
+                  button.btn.btn-sm.btn-light(type='button' data-toggle="modal" data-target="#svr250a") Подробнее
+          
+
+    #svr100a.modal.fade(tabindex='-1', role='dialog', aria-labelledby='svr100a', aria-hidden='true')
+      .modal-dialog.modal-dialog-centered.modal-lg(role='document')
+        .modal-content
+          .modal-header
+            h5#svr100a-label.modal-title Реактор SVR-100A
+            button.close(type='button', data-dismiss='modal', aria-label='Close')
+              span(aria-hidden='true') ×
+          .modal-body
+            .row
+              .col-6.p-0
+                #carousel_100a.carousel.slide(data-ride='carousel')
+                  .carousel-inner
+                    .carousel-item.active
+                      img.img-fluid(src='~images/svr-100a.png', alt='svr-100a')
+                    .carousel-item
+                      img.img-fluid(src='~images/svr-100a-cut.png', alt='svr-100a-cut')
+                  a.carousel-control-prev(href='#carousel_100a', role='button', data-slide='prev')
+                    i.icon-scroll-arrow-to-left-1
+                    span.sr-only Previous
+                  a.carousel-control-next(href='#carousel_100a', role='button', data-slide='next')
+                    i.icon-scroll-arrow-to-right-1
+                    span.sr-only Next  
+              .col-6
+                table.table.table-striped
+                  thead
+                    tr
+                      th Характеристики
+                      th Значение
+                  tbody
+                    tr
+                      td Объем чаши сосуда
+                      td 99.75 л
+                    tr
+                      td Полный объем сосуда
+                      td 120 л
+                    tr
+                      td Рабочее давление в сосуде
+                      td 0.3 МПа
+                    tr
+                      td Рабочее давление в рубашке
+                      td 0.3 МПа
+                    tr
+                      td Рабочий диапазон температур
+                      td 20-160 °C
+              .col-12
+                .panel.panel-default
+                  .panel-heading.d-flex.justify-content-around.mb-5
+                    button.btn.btn-default.btn-sm.spoiler-trigger(type='button', data-toggle='collapse', data-target="#svr100atech") Подробные характеристики
+                    a.btn.btn-sm.btn-light(href="/contacts") Коммерческое предложение
+                  #svr100atech.panel-collapse.collapse.out
+                    .panel-body 
+                      table.table.table-striped.td-40
+                        thead
+                          tr
+                            th(style="width: 40%") Характеристики
+                            th Значение
+                        tbody
+                          tr
+                            td Проектное давление в реакторе
+                            td 0,4 МПа
+                          tr
+                            td Проектное давлениe в рубашке 
+                            td 0,4 МПа
+                          tr
+                            td Проектный диапазон температур
+                            td 20-160 °C
+                          tr
+                            td Рабочая среда
+                            td органические растворители
+                          tr
+                            td Материалы сосуда
+                            td AISI 316 L (08X17Н14M2)
+                          tr
+                            td Материалы рубашки и опор
+                            td AISI 316 L / AISI 316 Ti ( 03Х16Н15М3 / 10Х17Н13М2Т)
+                          tr
+                            td Материалы клапанов и уплотнений
+                            td  AISI 316 / AISI 316 Ti (08X17Н14M2 / 10Х17Н13М2Т), Фторопласт Ф4, фторкаучук (FKM)
+                          tr
+                            td Допуск коррозии в рубашке
+                            td 1 мм
+                          tr
+                            td Допуск коррозии в реакторе
+                            td 1 мм
+                          tr
+                            td Мощность электродвигателя
+                            td 0,55 КВт
+                          tr
+                            td Поверхность теплообмена
+                            td 
+                              | 0,542 м
+                              sup 2
+                          tr 
+                            td Частота оборотов вала 
+                            td 0-60 об/мин
+                          tr
+                            td Тип электродвигателя 
+                            td Взрывозащищенный (2 ExdeIICT4), питание 380 В 3 ф.
+                          tr
+                            td(colspan="2") Оборудован сьемной гильзой для установки КИП температуры
+                          tr
+                            td(colspan="2") Оборудован взрывозащищенным постом управления частотой вращения вала перемешивающего устройства.
+                          tr
+                            td(colspan="2") Уплотнение вала перемешивающего устройства - торцевое , тандем.
+                          tr 
+                            td Материалы уплотнений к среде
+                            td AISI 316, фторопласт, пара трения - карбид кремния.
+                          tr 
+                            td Материалы уплотнений к атмосфере
+                            td AISI 316, Нитрильный каучук, пара трения - графит/керамика
+
+    #svr250a.modal.fade(tabindex='-1', role='dialog', aria-labelledby='svr250a', aria-hidden='true')
+      .modal-dialog.modal-dialog-centered.modal-lg(role='document')
+        .modal-content
+          .modal-header
+            h5#svr250a-label.modal-title Реактор SVR-250A
+            button.close(type='button', data-dismiss='modal', aria-label='Close')
+              span(aria-hidden='true') ×
+          .modal-body
+            .row
+              .col-6.p-0
+                #carousel_250a.carousel.slide(data-ride='carousel')
+                  .carousel-inner
+                    .carousel-item.active
+                      img.img-fluid(src='~images/svr-250a.png', alt='svr-250a')
+                    .carousel-item
+                      img.img-fluid(src='~images/svr-250a.png', alt='svr-250a-cut')
+                  a.carousel-control-prev(href='#carousel_250a', role='button', data-slide='prev')
+                    i.icon-scroll-arrow-to-left-1
+                    span.sr-only Previous
+                  a.carousel-control-next(href='#carousel_250a', role='button', data-slide='next')
+                    i.icon-scroll-arrow-to-right-1
+                    span.sr-only Next 
+              .col-6
+                table.table.table-striped
+                  thead
+                    tr
+                      th Характеристики
+                      th Значение
+                  tbody
+                    tr
+                      td Объем заполнения
+                      td 215.27 л
+                    tr
+                      td Полный объем сосуда
+                      td 253.26 л
+                    tr
+                      td Рабочее давление в сосуде
+                      td 0.3 МПа
+                    tr
+                      td Рабочее давление в рубашке
+                      td 0.3 МПа
+                    tr
+                      td Рабочий диапазон температур
+                      td 20-160 °C
+              .col-12
+                .panel.panel-default
+                  .panel-heading.d-flex.justify-content-around.mb-5
+                    button.btn.btn-default.btn-sm.spoiler-trigger(type='button', data-toggle='collapse', data-target="#svr250atech") Подробные характеристики
+                    a.btn.btn-sm.btn-light(href="/contacts") Коммерческое предложение
+                  #svr250atech.panel-collapse.collapse.out
+                    .panel-body 
+                      table.table.table-striped.td-40
+                        thead
+                          tr
+                            th(style="width: 40%") Характеристики
+                            th Значение
+                        tbody
+                          tr
+                            td Проектное давление в реакторе
+                            td 0,4 МПа
+                          tr
+                            td Проектное давлениe в рубашке 
+                            td 0,4 МПа
+                          tr
+                            td Проектный диапазон температур
+                            td 20-160 °C
+                          tr
+                            td Рабочая среда
+                            td органические растворители
+                          tr
+                            td Материалы сосуда
+                            td AISI 316 L (08X17Н14M2)
+                          tr
+                            td Материалы рубашки и опор
+                            td AISI 316 L / AISI 316 Ti ( 03Х16Н15М3 / 10Х17Н13М2Т)
+                          tr
+                            td Материалы клапанов и уплотнений
+                            td  AISI 316 / AISI 316 Ti (08X17Н14M2 / 10Х17Н13М2Т), Фторопласт Ф4, фторкаучук (FKM)
+                          tr
+                            td Допуск коррозии в рубашке
+                            td 1 мм
+                          tr
+                            td Допуск коррозии в реакторе
+                            td 1 мм
+                          tr
+                            td Мощность электродвигателя
+                            td 0,55 КВт
+                          tr
+                            td Поверхность теплообмена
+                            td 
+                              | 0,948 м
+                              sup 2
+                          tr 
+                            td Частота оборотов вала 
+                            td 0-60 об/мин
+                          tr
+                            td Тип электродвигателя 
+                            td Взрывозащищенный (2 ExdeIICT4), питание 380 В 3 ф.
+                          tr
+                            td(colspan="2") Оборудован сьемной гильзой для установки КИП температуры
+                          tr
+                            td(colspan="2") Оборудован взрывозащищенным постом управления частотой вращения вала перемешивающего устройства.
+                          tr
+                            td(colspan="2") Уплотнение вала перемешивающего устройства - торцевое , тандем.
+                          tr 
+                            td Материалы уплотнений к среде
+                            td AISI 316, фторопласт, пара трения - карбид кремния.
+                          tr 
+                            td Материалы уплотнений к атмосфере
+                            td AISI 316, Нитрильный каучук, пара трения - графит/керамика

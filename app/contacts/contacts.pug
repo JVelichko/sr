@@ -1,0 +1,47 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title S&R Systems
+  body.grey-bg
+    include /header.pug
+    section#contacts.content-section
+      .container
+        .row.justify-content-center
+          .col-12.contact-card
+            .row
+              .col-6.p-0.full-img
+                img(class='h-100 w-100' src='~images/test2.jpg')
+              .col-5.p-30
+                .w-50
+                  h4 контакты
+                .section-subtitle
+                  h6 Contact us for a quote, help or to join our team.
+                .row.mt-5
+                  .col 
+                    p.subtitle Email
+                    span.text-content dasapegin@sr-systems.ru
+                  .col 
+                    p.subtitle Телефон
+                    span.text-content +7 (911) 134 7083
+                .row.mt-5
+                  .col
+                    h6 Напишите нам
+                    form(id="contactForm" action="")
+                      .form-group
+                        label(for="form_name") Имя
+                        input(type="text" class="form-control form-custom" id="form_name" autocomplete="false")
+                      .form-group
+                        label(for="form_email") Email
+                        input(type="text" class="form-control form-custom" id="form_email" autocomplete="false")
+                      .form-group.mb-4
+                        label(for="form_msg") Message
+                        textarea(name="msg", cols="30", rows="10" type="text" placeholder="Введите свое сообщение..." class="form-control form-custom" id="form_email" autocomplete="false")
+                      button( class='btn btn-sm btn-light text-center float-right' href='#') отправить
+                      
+                       
+                
+              
+

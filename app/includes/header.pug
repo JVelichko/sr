@@ -1,0 +1,35 @@
+//- In 'includes' all paths to assets should be relative to the index.pug file,
+//- like so './images/image.jpg',
+//- and not './../images/image.jpg'
+//- #l-home
+  
+.navbar.fixed-top.navbar-expand-xl.navbar-dark
+  .container
+    a(class='navbar-brand' href='/') 
+      img(class='img-logo' src='~images/logo_wh.png') 
+      | S&R Systems
+    button(class='navbar-toggler' type='button' data-toggle='collapse' 
+    data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' 
+    aria-label='Toggle navigation') 
+      span.navbar-toggler-icon
+    .collapse.navbar-collapse#navbarSupportedContent.justify-content-end 
+      ul.nav.nav-pills.nav-pills-outline.nav-fill
+        li.nav-item
+          a(class='nav-link' href='/catalog') Оборудование
+        li.nav-item
+          a(class='nav-link' href='/pervaporation') Первапорация
+        li.nav-item
+          a(class='nav-link' href='/membrans') Мембраны и модули
+        //- li.nav-item
+        //-   a(class='nav-link' href='#') Полимеры
+        //- li.nav-item
+        //-   a(class='nav-link' href='#') Проекты
+        li.nav-item
+          a(class='nav-link' href='/contacts') Контакты
+  //- header
+  //-   .ftco-slant
+  //-   .container.h-100
+  //-     .row.h-100.justify-content-center.align-items-center
+  //-       .col-lg-8
+  //-         h3.title S&R Systems
+  //-         h4.subtitle Separate and rule

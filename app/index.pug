@@ -1,0 +1,197 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title S&R Systems
+  body
+    //include ./includes/header.pug
+    
+    #l-home
+      include /header.pug
+      header
+        .ftco-slant
+        .container.h-100
+          .row.h-100.justify-content-center.align-items-center
+            .col-lg-8
+              h3.title S&R Systems
+              h4.subtitle Separate and rule
+
+    section#l-about
+      .bg-line.d-none.d-lg-block
+      .container
+        .row.justify-content-around.align-items-center
+          .col-12.col-md-5
+            h5 Задача компании — повышение мобильности и эффективности.  
+          .col-12.col-md-6.text-justify
+            p.
+              Высокая стоимость и ограниченная функциональность 
+              аппаратов химической технологии значительно снижает 
+              мобильность технологических процессов. Не возникнет проблем, 
+              если ваше производство не требует постоянных изменений и ассортимент 
+              продукции постоянен. Но мобильность становится большим конкурентным 
+              преимуществом в случае пилотных, контрактных производств и производственных 
+              лабораторий, когда ассортимент продукции и технологические процессы часто 
+              изменяются.
+            p.
+              Наша компания специализируется на разработке и производстве инновационного 
+              оборудования для проведения химико-технологических процессов. Основной задачей 
+              компании является повышение мобильности и эффективности аппаратов химической промышленности. 
+        .row.mt-5.justify-content-around.align-items-end
+          .col-12.col-lg-5.col-xl-4
+            .section-title
+              h4 Ёмкостное оборудование
+            .section-subtitle
+              h5 Реакторы SVR
+            p.
+              Реакторы линейки SVR подходят для пилотных производств и лабораторий. 
+              Отличительными чертами наших реакторов являются надёжность конструкции 
+              и простота в эксплуатации. При разработке оборудования мы обращаем особое внимание на функциональность, безопасность и долгосрочную работу без перебоев.
+            button( class='btn btn-lg btn-light text-center' href='#') Каталог
+          .col-12.col-lg-7.col-xl-8
+            .masked
+              img(class='img-fluid' src='images/svr-100a-test.jpg')
+              .masked-col
+    
+    section#pervapor
+      .container
+        .row.justify-content-around.align-items-center
+          .col-12.col-md-6
+            .section-title
+              h4 первапорационные модули
+            .section-subtitle
+              h5 Процесс первапорации способен конкурировать с обратным осмосом, дистилляцией, ректификацией и прочими
+            p.
+              Первапорация позволяет реализовать ряд уникальных технологических 
+              процессов, например, разделение жидких смесей без нагрева. 
+            
+            a(class='d-flex align-items-center' href='#') 
+              span.mr-1 Хотите узнать больше? 
+              i.icon-scroll-arrow-to-right-1
+              
+          .col-12.col-md-5
+            img(class='img-fluid' src='images/trident-l.jpg')
+
+    section#membr
+      .container
+        .row.justify-content-around.align-items-center
+          .col-12.col-md-5
+            img(class='img-fluid' src='images/mem.jpg')
+          .col-12.col-md-6
+            .section-title
+              h4 мембранные материалы
+            .section-subtitle
+              h5 обладают исключительной термостабильностью и химической стойкостью
+            p.
+              Гидрофильные фильтрующие материалы ROMAKON 
+              для ультра-; нанофильтрации и первапорации, 
+              обладают исключительной термостабильностью и химической стойкостью. 
+              Идеальны для использования в качестве селективных мембран в шприц-фильтрах и 
+              установках лабораторной фильтрации. 
+            
+            a(class='d-flex align-items-center' href='#') 
+              span.mr-1 Хотите узнать больше? 
+              i.icon-scroll-arrow-to-right-1
+
+    
+    section#services
+      .container.d-block.d-md-none
+        .row.justify-content-around.align-items-end
+          .icon-block
+            .col-6
+              img(class='img-fluid' src='images/loc.png')
+            .col-12  
+              .icon-block-title
+                h5 Локализация РФ
+              .icon-block-content
+                p.
+                  К Локализация числу реактопластов относят материалы, 
+                  переработка в изделия которых сопровождается 
+                  химической реакцией образования сетчатого полимера — 
+                  отверждением; при этом пластик необратимо утрачивает 
+                  способность переходить в вязкотекучее состояние (раствор или расплав).   
+
+      .container.d-none.d-md-block
+        .row.justify-content-around.align-items-end
+          ul(class='nav nav-tabs-line text-center' id='nav-tab' role='tablist')
+            li.nav-item.col
+              a(class='nav-link active' 
+                id='nav-loc-tab' data-toggle='tab' 
+                href='#nav-loc' role='tab' aria-controls='nav-loc' aria-selected='true') 
+                img(class='img-fluid' src='images/loc.png')
+                .tab-title
+                  p Локализация РФ 
+            li.nav-item.col
+              a(class='nav-link' 
+                id='nav-gar-tab' data-toggle='tab' 
+                href='#nav-gar' role='tab' aria-controls='nav-gar' aria-selected='false') 
+                img(class='img-fluid' src='images/gar.png')
+                .tab-title
+                  p Качество   
+            li.nav-item.col  
+              a(class='nav-link' 
+                id='nav-cer-tab' data-toggle='tab' 
+                href='#nav-cer' role='tab' aria-controls='nav-cer' aria-selected='false')
+                img(class='img-fluid' src='images/cer.png')
+                .tab-title
+                  p Сертификация 
+            li.nav-item.col    
+              a(class='nav-link' 
+                id='nav-colb-tab' data-toggle='tab' 
+                href='#nav-colb' role='tab' aria-controls='nav-colb' aria-selected='false')
+                img(class='img-fluid' src='images/colb2.png')
+                .tab-title
+                  p Собственная разработка 
+            li.nav-item.col 
+              a(class='nav-link' 
+                id='nav-some-tab' data-toggle='tab' 
+                href='#nav-some' role='tab' aria-controls='nav-some' aria-selected='false')
+                img(class='img-fluid' src='images/elem.png')
+                .tab-title
+                  p Что-то крутое
+        
+        .row.justify-content-around.mt-5
+          .col-1.prev-step.block-hover
+            i.icon-scroll-arrow-to-left-1
+          .col-10.tab-content#nav-tabContent
+            div(class='tab-pane fade show active' id='nav-loc' role='tabpanel' aria-labelledby='nav-loc-tab')
+              p.
+                    К Локализация числу реактопластов относят материалы, 
+                    переработка в изделия которых сопровождается 
+                    химической реакцией образования сетчатого полимера — 
+                    отверждением; при этом пластик необратимо утрачивает 
+                    способность переходить в вязкотекучее состояние (раствор или расплав).
+            div(class='tab-pane fade' id='nav-gar' role='tabpanel' aria-labelledby='nav-gar-tab')
+              p.
+                  К2 Качество числу реактопластов относят материалы, 
+                  переработка в изделия которых сопровождается 
+                  химической реакцией образования сетчатого полимера — 
+                  отверждением; при этом пластик необратимо утрачивает 
+                  способность переходить в вязкотекучее состояние (раствор или расплав).переработка в изделия которых сопровождается 
+                  химической реакцией образования сетчатого полимера — 
+                  отверждением; при этом пластик необратимо утрачивает 
+                  способность переходить в вязкотекучее состояние (раствор или расплав).
+            div(class='tab-pane fade' id='nav-cer' role='tabpanel' aria-labelledby='nav-cer-tab')
+              p.
+                  К3 Сертификация числу реактопластов относят материалы, 
+                  переработка в изделия которых сопровождается 
+                  химической реакцией образования сетчатого полимера — 
+                  отверждением; при этом пластик необратимо утрачивает 
+                  способность переходить в вязкотекучее состояние (раствор или расплав).
+            div(class='tab-pane fade' id='nav-colb' role='tabpanel' aria-labelledby='nav-colb-tab')
+              p.
+                  К3 Собственная разработка числу реактопластов относят материалы, 
+                  переработка в изделия которых сопровождается 
+                  химической реакцией образования сетчатого полимера — 
+                  отверждением; при этом пластик необратимо утрачивает 
+                  способность переходить в вязкотекучее состояние (раствор или расплав).
+            div(class='tab-pane fade' id='nav-some' role='tabpanel' aria-labelledby='nav-some-tab')
+              p.
+                  К3 Что-то  разработка числу реактопластов относят материалы, 
+                  переработка в изделия которых сопровождается 
+                  химической реакцией образования сетчатого полимера — 
+                  отверждением; при этом пластик необратимо утрачивает 
+                  способность переходить в вязкотекучее состояние (раствор или расплав).
+          .col-1.next-step.block-hover
+            i.icon-scroll-arrow-to-right-1

@@ -1,0 +1,65 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title S&R Systems
+  body
+    include /header.pug
+    section
+      .container
+        .row.justify-content-around.align-items-center
+          .col-12.col-md-5
+            #carousel_pervapor.carousel.slide(data-ride='carousel')
+              .carousel-inner
+                .carousel-item.active
+                  img.img-fluid(src='~images/trident.png', alt='spc trident')
+                  .carousel-caption.d-none.d-md-block.text-center
+                    span Лабораторный модуль SPC Trident 
+                .carousel-item
+                  img.img-fluid(src='~images/sequoia.png', alt='sequoia')
+                  .carousel-caption.d-none.d-md-block.text-center
+                    span Пилотная установка SEQUOIA
+              a.carousel-control-prev(href='#carousel_pervapor', role='button', data-slide='prev')
+                i.icon-scroll-arrow-to-left-1
+                span.sr-only Previous
+              a.carousel-control-next(href='#carousel_pervapor', role='button', data-slide='next')
+                i.icon-scroll-arrow-to-right-1
+                span.sr-only Next
+
+            //img(class='img-fluid' src='~images/svr-200.png')  
+          .col-12.col-md-6.text-justify
+            h5.mb-5 Мембраны и модули
+            p.
+              Первапорация - диффузионный мембранный процесс разделения жидких смесей сопряженный с переходом проникающих через мембрану веществ в пар. Первапорационное разделение энергоэффективная альтернатива термическим методам разделения, таким как ректификация.
+            p.
+              Мы специализируемся на разработке и изготовлении полимерных первапорационных мембран и установок на их основе для задач обезвоживания органических растворителей и разделения реакционных смесей оксигенатов
+              
+    section.sub-section.series-card
+      .container
+        h5.text-center.title.mb-4 каталог
+        .row.series-card
+          .card-deck.justify-content-center
+            .card.col-4.mb-4.box-shadow.series
+              img.img-fluid-90(src='~images/romakon.png')
+              .card-body
+                h6.title Мембранные материалы 
+                p.card-text.
+                  Первапорационные мембраны на основе полигетероариленов для разделения различных жидких смесей органических веществ, в том числе для обезвоживания органических растворителей.
+                a(class='d-flex align-items-center' href='membrans/material') 
+                  span.mr-1 Посмотреть продукцию 
+                  i.icon-scroll-arrow-to-right-1
+            
+            .card.col-4.mb-4.box-shadow.series
+              img.img-fluid-90(src='~images/trident.png')
+              .card-body
+                h6.title Мембранные модульные системы
+                p.card-text.
+                  Реакционные сосуды из нержавеющей стали и других сплавов.
+                  Снабжаются датчиками и постами управления по требованию заказчика
+                  Возможно изготовление во взрывозащищенном исполнении
+                a(class='d-flex align-items-center' href='membrans/modules') 
+                  span.mr-1 Посмотреть продукцию 
+                  i.icon-scroll-arrow-to-right-1
+            

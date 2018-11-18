@@ -1,0 +1,179 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title S&R Systems
+  body
+    include /header.pug
+    section
+      .container
+        //- nav(aria-label='breadcrumb')
+        //-   ol.breadcrumb
+        //-     li.breadcrumb-item
+        //-       a(href='../catalog') Ёмкостное оборудование
+        //-     li.breadcrumb-item.active(aria-current='page') Модульные реакторы
+
+        a#back(class='d-flex align-items-center' href='') 
+          i.icon-scroll-arrow-to-left-1
+          span.ml-1 Назад 
+                  
+        .row.justify-content-around.align-items-center
+          .col-12.col-md-5
+            #carousel_modular.carousel.slide(data-ride='carousel')
+              .carousel-inner
+                .carousel-item.active
+                  img.img-fluid(src='~images/modular.png', alt='modular')
+                  .carousel-caption.d-none.d-md-block.text-center
+                    span Принцип модульной конструкции
+                .carousel-item
+                  img.img-fluid(src='~images/svr-25.png', alt='svr-25')
+                  .carousel-caption.d-none.d-md-block.text-center
+                    span Реактор SVR-25
+                .carousel-item
+                  img.img-fluid(src='~images/svr-200.png', alt='svr-200')
+                  .carousel-caption.d-none.d-md-block.text-center
+                    span Реактор SVR-200
+              a.carousel-control-prev(href='#carousel_modular', role='button', data-slide='prev')
+                i.icon-scroll-arrow-to-left-1
+                span.sr-only Previous
+              a.carousel-control-next(href='#carousel_modular', role='button', data-slide='next')
+                i.icon-scroll-arrow-to-right-1
+                span.sr-only Next    
+          .col-12.col-md-6.text-justify
+            h5.mb-5 Модульные реакторы
+            p.
+              Модульные реакционные сосуды из фторопласта для работы с особо агрессивными средами.
+              Снабжаются датчиками и постами управления по требованию заказчика.
+              Возможно изготовление во взрывозащищенном исполнении.
+              Уникальная модульная конструкция обеспечивает мобильность, повышенную функциональность и привлекательную стоимость оборудования.
+        .row.justify-content-around
+          .col-5.box-shadow.bg-grey.mb-4
+            .row.align-items-center.h-100
+              .col-4.p-0
+                img.img-fluid(src="~images/svr-25.png", alt="svr-25")
+              .col.card-inner
+                h6.title Реактор SVR-25
+                p.card-text.
+                  Модульный фторопластовый реактор малого объема для проведения пилотных испытаний химических процессов. Оборудован змеевиком и магнитной муфтой.
+                .d-flex.justify-content-between.align-items-center
+                  button.btn.btn-sm.btn-light(type='button' data-toggle="modal" data-target="#svr25") Подробнее
+          .col-5.box-shadow.bg-grey.mb-4
+            .row.align-items-center.h-100
+              .col-4.p-0
+                img.img-fluid(src="~images/svr-200.png", alt="svr-200")
+              .col.card-inner
+                h6.title Реактор SVR-200
+                p.card-text.
+                   Модульный фторопластовый реактор большого обьема (до 200 л) с уникальной конструкцией теплообменой системы позволяет работать со сверхагрессивными средами при высоких давлениях (до 0,4 МПа).
+                d-flex.justify-content-between.align-items-center
+                  button.btn.btn-sm.btn-light(type='button' data-toggle="modal" data-target="#svr200") Подробнее
+          
+#svr25.modal.fade(tabindex='-1', role='dialog', aria-labelledby='svr25', aria-hidden='true')
+  .modal-dialog.modal-dialog-centered.modal-lg(role='document')
+    .modal-content
+      .modal-header
+        h5#svr25-label.modal-title Реактор SVR-25
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+      .modal-body
+        .row.justify-content-center
+          .col-6
+            #carousel_svr_25.carousel.slide(data-ride='carousel')
+              .carousel-inner
+                .carousel-item.active
+                  img.img-fluid(src='~images/svr-25.png', alt='svr-25')
+                .carousel-item
+                  img.img-fluid(src='~images/svr-25-cut.png', alt='svr-25-cut')
+              a.carousel-control-prev(href='#carousel_svr_25', role='button', data-slide='prev')
+                i.icon-scroll-arrow-to-left-1
+                span.sr-only Previous
+              a.carousel-control-next(href='#carousel_svr_25', role='button', data-slide='next')
+                i.icon-scroll-arrow-to-right-1
+                span.sr-only Next    
+          .col-12
+            table.table.table-striped
+              thead
+                tr
+                  th Характеристики
+                  th Значение
+              tbody
+                tr
+                  td Загрузочный объем
+                  td 20 - 25 л
+                tr
+                  td Тип уплотнения вала
+                  td магнитная муфта / сальниковое уплотнение
+                tr
+                  td Диапазон рабочих температур
+                  td от -20 до +220 °C
+                tr
+                  td Максимальное рабочее давление
+                  td 0.01 / 0.3 МПа
+                tr
+                  td Материал корпуса
+                  td Фторопласт Ф4 (PTFE), сталь AISI 316 L
+                tr
+                  td Площадь теплообмена
+                  td 
+                    | 0,447 м
+                    sup 2
+
+      .modal-footer
+        a.btn.btn-sm.btn-light(href="/contacts") Получить коммерческое предложение
+
+#svr200.modal.fade(tabindex='-1', role='dialog', aria-labelledby='svr200', aria-hidden='true')
+  .modal-dialog.modal-dialog-centered.modal-lg(role='document')
+    .modal-content
+      .modal-header
+        h5#svr200-label.modal-title Реактор SVR-200
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+      .modal-body
+        .row.justify-content-center
+          .col-6
+            #carousel_svr_200.carousel.slide(data-ride='carousel')
+              .carousel-inner
+                .carousel-item.active
+                  img.img-fluid(src='~images/svr-200.png', alt='svr-200')
+                .carousel-item
+                  img.img-fluid(src='~images/svr-200.png', alt='svr-200-cut')
+              a.carousel-control-prev(href='#carousel_svr_200', role='button', data-slide='prev')
+                i.icon-scroll-arrow-to-left-1
+                span.sr-only Previous
+              a.carousel-control-next(href='#carousel_svr_200', role='button', data-slide='next')
+                i.icon-scroll-arrow-to-right-1
+                span.sr-only Next  
+          .col-12
+            table.table.table-striped
+              thead
+                tr
+                  th Характеристики
+                  th Значение
+              tbody
+                tr
+                  td Загрузочный объем
+                  td 100 - 200 л
+                tr
+                  td Тип уплотнения вала
+                  td двойное торцевое уплотнение типа Тандем
+                tr
+                  td Диапазон рабочих температур
+                  td от -20 до +220 °C
+                tr
+                  td Максимальное рабочее давление
+                  td 0.01 / 0.4 МПа
+                tr
+                  td Материал корпуса
+                  td Фторопласт Ф4 (PTFE)
+                tr
+                  td Материал армирующих частей
+                  td Сталь AISI 316 L
+                tr
+                  td(colspan="2")  Вмонтированный в корпус теплообменник
+                tr
+                  td(colspan="2")  Возможность изменять обьем реактора в условиях производства
+
+      .modal-footer
+        a.btn.btn-sm.btn-light(href="/contacts") Получить коммерческое предложение

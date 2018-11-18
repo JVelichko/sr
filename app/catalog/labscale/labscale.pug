@@ -1,0 +1,159 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title S&R Systems
+  body
+    include /header.pug
+    section
+      .container
+        .row.justify-content-around.align-items-center
+          .col-12.col-md-5
+            #carousel_labscale.carousel.slide(data-ride='carousel')
+              .carousel-inner
+                .carousel-item.active
+                  img.img-fluid(src='~images/svr-1.png', alt='svr-1')
+                  .carousel-caption.d-none.d-md-block.text-center
+                    span Реактор SVR-1
+                .carousel-item
+                  img.img-fluid(src='~images/svr-8.png', alt='svr-8')
+                  .carousel-caption.d-none.d-md-block.text-center
+                    span Реактор SVR-8
+              a.carousel-control-prev(href='#carousel_labscale', role='button', data-slide='prev')
+                i.icon-scroll-arrow-to-left-1
+                span.sr-only Previous
+              a.carousel-control-next(href='#carousel_labscale', role='button', data-slide='next')
+                i.icon-scroll-arrow-to-right-1
+                span.sr-only Next
+          .col-12.col-md-6.text-justify
+            h5.mb-5 Лабораторные реакторы SVR
+            p.
+              Модульные системы для проведения и оптимизации химико-технологических процессов в лабораторных условиях.
+              Материалы, контактирующие со средой, позволяют работать со сверхагрессивными средами, такими как сильные окислители, кислоты, органические растворители и многими другими.
+        .row.justify-content-around
+          .col-5.box-shadow.bg-grey.mb-4
+            .row.align-items-center.h-100
+              .col-4.p-0
+                img.img-fluid(src="~images/svr-1.png", alt="svr-1")
+              .col.card-inner
+                h6.title Реактор SVR-1
+                p.card-text.
+                  Модульная система для проведения и оптимизации химико-технологических процессов в лабораторных условиях.
+                .d-flex.justify-content-between.align-items-center
+                  button.btn.btn-sm.btn-light(type='button' data-toggle="modal" data-target="#svr1") Подробнее
+          .col-5.box-shadow.bg-grey.mb-4
+            .row.align-items-center.h-100
+              .col-4.p-0
+                img.img-fluid(src="~images/svr-8.png", alt="svr-8")
+              .col.card-inner
+                h6.title Реактор SVR-8
+                p.card-text.
+                  Пилотный реактор небольшого размера, идеальный для производства малых объёмов продукции.
+                d-flex.justify-content-between.align-items-center
+                  button.btn.btn-sm.btn-light(type='button' data-toggle="modal" data-target="#svr8") Подробнее
+          
+
+
+#svr1.modal.fade(tabindex='-1', role='dialog', aria-labelledby='svr1', aria-hidden='true')
+  .modal-dialog.modal-dialog-centered.modal-lg(role='document')
+    .modal-content
+      .modal-header
+        h5#svr100a-label.modal-title Реактор SVR-1
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+      .modal-body
+        .row.justify-content-center
+          .col-6
+            #carousel_svr_1.carousel.slide(data-ride='carousel')
+              .carousel-inner
+                .carousel-item.active
+                  img.img-fluid(src='~images/svr-1.png', alt='svr-1')
+                .carousel-item
+                  img.img-fluid(src='~images/svr-1-cut.png', alt='svr-1-cut')
+              a.carousel-control-prev(href='#carousel_svr_1', role='button', data-slide='prev')
+                i.icon-scroll-arrow-to-left-1
+                span.sr-only Previous
+              a.carousel-control-next(href='#carousel_svr_1', role='button', data-slide='next')
+                i.icon-scroll-arrow-to-right-1
+                span.sr-only Next
+          .col-12
+            table.table.table-striped
+              thead
+                tr
+                  th Характеристики
+                  th Значение
+              tbody
+                tr
+                  td Загрузочный объем
+                  td 0.5 - 2 л
+                tr
+                  td Тип уплотнения вала
+                  td магнитная муфта / сальниковое уплотнение
+                tr
+                  td Диапазон рабочих температур
+                  td от -20 до +220 °C
+                tr
+                  td Максимальное рабочее давление
+                  td 0.01 / 0.2 МПа
+                tr
+                  td Материал корпуса
+                  td Фторопласт Ф4 (PTFE)
+                tr
+                  td Материал штатива
+                  td сталь AISI 316 L / сталь AISI 304
+
+      .modal-footer
+        a.btn.btn-sm.btn-light(href="/contacts") Получить коммерческое предложение
+
+#svr8.modal.fade(tabindex='-1', role='dialog', aria-labelledby='svr8', aria-hidden='true')
+  .modal-dialog.modal-dialog-centered.modal-lg(role='document')
+    .modal-content
+      .modal-header
+        h5#svr8-label.modal-title Реактор SVR-8
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+      .modal-body
+        .row.justify-content-center
+          .col-6
+            #carousel_svr_8.carousel.slide(data-ride='carousel')
+              .carousel-inner
+                .carousel-item.active
+                  img.img-fluid(src='~images/svr-8.png', alt='svr-8')
+                .carousel-item
+                  img.img-fluid(src='~images/svr-8-cut.png', alt='svr-8-cut')
+              a.carousel-control-prev(href='#carousel_svr_8', role='button', data-slide='prev')
+                i.icon-scroll-arrow-to-left-1
+                span.sr-only Previous
+              a.carousel-control-next(href='#carousel_svr_8', role='button', data-slide='next')
+                i.icon-scroll-arrow-to-right-1
+                span.sr-only Next 
+          .col-12
+            table.table.table-striped
+              thead
+                tr
+                  th Характеристики
+                  th Значение
+              tbody
+                tr
+                  td Загрузочный объем
+                  td 4 - 12 л
+                tr
+                  td Тип уплотнения вала
+                  td магнитная муфта / сальниковое уплотнение
+                tr
+                  td Диапазон рабочих температур
+                  td от -20 до +220 °C
+                tr
+                  td Максимальное рабочее давление
+                  td 0.01 / 0.3 МПа
+                tr
+                  td Материал корпуса
+                  td Фторопласт Ф4 (PTFE),сталь AISI 316 L
+                tr
+                  td Материал штатива
+                  td сталь AISI 316 L / сталь AISI 304
+
+      .modal-footer
+        a.btn.btn-sm.btn-light(href="/contacts") Получить коммерческое предложение
